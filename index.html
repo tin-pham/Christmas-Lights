@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/0a4a9d7429.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Christmas Light</title>
+  </head>
+  <body>
+    <section>
+      <div class="light-container">
+        <div class="rope">
+          <div class="trapezoid">
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-minus"></i>
+          </div>
+          <div class="lighter lighter--1" id="1"></div>
+        </div>
+
+        <div class="rope">
+          <div class="trapezoid">
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-minus"></i>
+          </div>
+          <div class="lighter lighter--2" id="2"></div>
+        </div>
+
+        <div class="rope">
+          <div class="trapezoid">
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-minus"></i>
+          </div>
+          <div class="lighter lighter--3" id="3"></div>
+        </div>
+
+        <div class="rope">
+          <div class="trapezoid">
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-minus"></i>
+          </div>
+          <div class="lighter lighter--4" id="4"></div>
+        </div>
+
+        <div class="rope">
+          <div class="trapezoid">
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-minus"></i>
+          </div>
+          <div class="lighter lighter--5" id="5"></div>
+        </div>
+
+        <div class="rope">
+          <div class="trapezoid">
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-minus"></i>
+          </div>
+          <div class="lighter lighter--6" id="6"></div>
+        </div>
+
+        <div class="rope">
+          <div class="trapezoid">
+            <i class="fas fa-plus"></i>
+            <i class="fas fa-minus"></i>
+          </div>
+          <div class="lighter lighter--7" id="7"></div>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button class="button button--toggle">Toggle Light</button>
+        <button class="button button--flash">Flash</button>
+        <input
+          type="number"
+          min="500"
+          max="1000"
+          step="100"
+          id="interval-change"
+        />
+      </div>
+    </section>
+  </body>
+</html>

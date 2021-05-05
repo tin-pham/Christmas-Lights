@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  background: url(./images/night-star-1920x1080.jpg) no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.light-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button-container {
+  align-self: center;
+  margin: 0 1rem 3rem;
+}
+
+.rope {
+  width: 1px;
+  height: 40vh;
+  background: #774936;
+  position: relative;
+}
+
+.trapezoid {
+  position: absolute;
+  width: 50px;
+  height: 0;
+  border-bottom: 25px solid white;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: 0;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: flex;
+  gap: 0.25em;
+}
+
+.trapezoid * {
+  transform: translateY(5px);
+  cursor: pointer;
+}
+
+.lighter {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #370617;
+  border-radius: 50%;
+  bottom: 0;
+  transform: translate(-50%, 100%);
+  z-index: 0;
+  transition: all 200ms ease-in-out;
+}
+
+.lighter.on {
+  box-shadow: 0 0 50px #fff, 0 0 30px 20px currentColor;
+  transition: all 200ms ease-in-out;
+}
+
+.lighter--1.on {
+  color: hsl(359, 100%, 60%);
+  background: currentColor;
+}
+
+.lighter--2.on {
+  color: hsl(12, 100%, 60%);
+  background: currentColor;
+}
+
+.lighter--3.on {
+  color: hsl(46, 100%, 60%);
+  background: currentColor;
+}
+
+.lighter--4.on {
+  color: hsl(120, 100%, 60%);
+  background: currentColor;
+}
+
+.lighter--5.on {
+  color: hsl(201, 100%, 60%);
+  background: currentColor;
+}
+
+.lighter--6.on {
+  color: hsl(239, 49%, 35%);
+  background: currentColor;
+}
+
+.lighter--7.on {
+  color: hsl(271, 100%, 60%);
+  background-color: currentColor;
+}
+
+.button {
+  border: 1px solid white;
+  border-radius: 20px;
+  outline: none;
+  background: #d3d3d3;
+  padding: 0.75em;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#interval-change {
+  font-size: 1.5rem;
+  border: 5px solid white;
+  border-radius: 20px;
+  outline: none;
+  padding: 0.75em;
+}
